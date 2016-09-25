@@ -1,5 +1,0 @@
-
-
-function Start () {
-	DontDestroyOnLoad (gameObject);
-}
