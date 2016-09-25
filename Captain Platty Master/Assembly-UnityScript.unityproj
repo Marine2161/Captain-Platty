@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C3755FDC-2EF5-E573-F87D-B789F907BAEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_1;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Custom Prefabs\08 - Gear\GearAI.js" />
+     <Compile Include="Assets\Custom Prefabs\08 - Gear\GearAI1.js" />
+     <Compile Include="Assets\Custom Prefabs\08 - Gear\Run.js" />
+     <Compile Include="Assets\Scripts\Activate.js" />
+     <Compile Include="Assets\Scripts\BGMusic.js" />
+     <Compile Include="Assets\Scripts\Ball.js" />
+     <Compile Include="Assets\Scripts\BallFreeze.js" />
+     <Compile Include="Assets\Scripts\BulletScript\BluePortal.js" />
+     <Compile Include="Assets\Scripts\BulletScript\BlueTeleport.js" />
+     <Compile Include="Assets\Scripts\BulletScript\FireBullet1.js" />
+     <Compile Include="Assets\Scripts\BulletScript\OrangePortal.js" />
+     <Compile Include="Assets\Scripts\BulletScript\OrangeTeleport.js" />
+     <Compile Include="Assets\Scripts\BulletScript\PortalShooter1.js" />
+     <Compile Include="Assets\Scripts\CameraSwap.js" />
+     <Compile Include="Assets\Scripts\CanHit.js" />
+     <Compile Include="Assets\Scripts\DeathOverTime.js" />
+     <Compile Include="Assets\Scripts\Delete.js" />
+     <Compile Include="Assets\Scripts\Endeffect.js" />
+     <Compile Include="Assets\Scripts\Flicker.js" />
+     <Compile Include="Assets\Scripts\Freeze.js" />
+     <Compile Include="Assets\Scripts\Froze.js" />
+     <Compile Include="Assets\Scripts\Gravity.js" />
+     <Compile Include="Assets\Scripts\HP.js" />
+     <Compile Include="Assets\Scripts\HookShotScript\HookPull.js" />
+     <Compile Include="Assets\Scripts\HookShotScript\HookShot.js" />
+     <Compile Include="Assets\Scripts\HookShotScript\HookSpawn.js" />
+     <Compile Include="Assets\Scripts\Invisable Shader.js" />
+     <Compile Include="Assets\Scripts\IsAiming.js" />
+     <Compile Include="Assets\Scripts\IsHittable.js" />
+     <Compile Include="Assets\Scripts\KillVolume.js" />
+     <Compile Include="Assets\Scripts\Lights.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\Blaster.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\DoorOpen.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\HammerButton.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\HammerSwing.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\PlayerDrop.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\PowerButton.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\Speed.js" />
+     <Compile Include="Assets\Scripts\MachineButtons\Start.js" />
+     <Compile Include="Assets\Scripts\MouseLock.js" />
+     <Compile Include="Assets\Scripts\MusicMaker.js" />
+     <Compile Include="Assets\Scripts\NameController.js" />
+     <Compile Include="Assets\Scripts\OnButton.js" />
+     <Compile Include="Assets\Scripts\Player Lives.js" />
+     <Compile Include="Assets\Scripts\PortalOtherWorld.js" />
+     <Compile Include="Assets\Scripts\PortalWestern.js" />
+     <Compile Include="Assets\Scripts\Respawn.js" />
+     <Compile Include="Assets\Scripts\SaveTracking.js" />
+     <Compile Include="Assets\Scripts\ShaderChange.js" />
+     <Compile Include="Assets\Scripts\Shield.js" />
+     <Compile Include="Assets\Scripts\loadLevelClick.js" />
+     <Compile Include="Assets\Scripts\loadLevelEnter.js" />
+     <Compile Include="Assets\Scripts\loadLevelGUI.js" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetParticleMultiplicative.shader" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetCustomLighting.shader" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetParticleAlphaBlended.shader" />
+     <None Include="Assets\ShaderForge\Readme.txt" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetSprite.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetParticleAdditive.shader" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetUnlit.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetPBR.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightWrapping.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\TessellationDisplacement.shader" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetBasic.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Tiles.shader" />
+     <None Include="Assets\Materials\Variety Pack\readme.txt" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\PixelRotator.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
+     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetSky.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B3656453-9AB7-C5F7-210D-8BAEB0B11F6F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
