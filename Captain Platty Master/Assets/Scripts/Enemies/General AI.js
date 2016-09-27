@@ -10,7 +10,7 @@ var secondsCount : float;
 var patrolWaypoint : Transform[];
 var currentWaypoint : int = 0;
 var waypointRadious : float = 1; 
-var isWorking : Boolean = !isWorking;
+var isWorking : boolean = false;
 //State Machine Var
 //0 = patrol, 1 = chase, 2 = strafe, 3 = flee
 var State : int = 0;
@@ -94,7 +94,7 @@ function Patrol (){
 }
 
 function Working (){
-	secondsCount += Time.deltaTime
+	secondsCount += Time.deltaTime;
 	
 	if (Time.deltaTime >= 10){
 		//working animation
