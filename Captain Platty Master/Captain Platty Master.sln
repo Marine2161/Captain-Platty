@@ -7,8 +7,6 @@ Project("{FE875954-E2F3-369D-3F3B-C40F2B6C8F4A}") = "Captain Platty Master", "As
 EndProject
 Project("{FE875954-E2F3-369D-3F3B-C40F2B6C8F4A}") = "Captain Platty Master", "Assembly-CSharp-Editor.csproj", "{FE6A6F87-5998-7D6A-E150-6BD4AC12C67B}"
 EndProject
-Project("{FE875954-E2F3-369D-3F3B-C40F2B6C8F4A}") = "Captain Platty Master", "Assembly-UnityScript.unityproj", "{C3755FDC-2EF5-E573-F87D-B789F907BAEA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{FE6A6F87-5998-7D6A-E150-6BD4AC12C67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE6A6F87-5998-7D6A-E150-6BD4AC12C67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE6A6F87-5998-7D6A-E150-6BD4AC12C67B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3755FDC-2EF5-E573-F87D-B789F907BAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3755FDC-2EF5-E573-F87D-B789F907BAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3755FDC-2EF5-E573-F87D-B789F907BAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3755FDC-2EF5-E573-F87D-B789F907BAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
