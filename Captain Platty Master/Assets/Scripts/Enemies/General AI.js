@@ -2,15 +2,15 @@
 var target : Transform;
 var targetList : GameObject[];
 var rotateSpeed : float;
-
+var defaultSpeed : float = 5;
 //Agro Var
 var aggroRange : float = 20;
-
+var secondsCount : float;
 //Patrol Var
 var patrolWaypoint : Transform[];
 var currentWaypoint : int = 0;
 var waypointRadious : float = 1; 
-
+var isWorking : Boolean = !isWorking;
 //State Machine Var
 //0 = patrol, 1 = chase, 2 = strafe, 3 = flee
 var State : int = 0;
@@ -46,17 +46,22 @@ do{	target = targetList[Random.Range(0, targetList.length)].transform;
 function Chase (chaseTarget : Transform){
 
 	agent.SetDestination (chaseTarget.position);
+	agent.updateRotation = true;
+	//agent.speed = 5;
 	print ("Chaseing");
 }
 
 function Watch (watchTarget : Transform){
 
-	//agent.updateRotation = fales;
-
+	agent.SetDestination (transform.position);
+	agent.updateRotation = false;
+	transform.LookAt (watchTarget);
 	targetDir = watchTarget.position - transform.position;
 
 	transform.rotation = Quaternion.LookRotation (Vector3.RotateTowards(transform.forward, targetDir, rotateSpeed * Time.deltaTime, 0.0));
-		print ("Watching");
+	//agent.speed = 0;
+
+
 }
 
 function Aggro (aggroTarget : Transform){
@@ -78,12 +83,22 @@ function Patrol (){
 	if (Vector3.Distance(transform.position, patrolWaypoint[currentWaypoint].position) < waypointRadious){
 		currentWaypoint ++;
 
-		yield WaitForSecondsRealtime (10);
-
 		print ("Patroling");
 	}
 	if (currentWaypoint >= patrolWaypoint.Length) {
 		currentWaypoint = 0;
+	}
+	if (currentWaypoint == patrolWaypoint.Length){
+		Working ();
+	}
+}
+
+function Working (){
+	secondsCount += Time.deltaTime
+	
+	if (Time.deltaTime >= 10){
+		//working animation
+
 	}
 }
 
