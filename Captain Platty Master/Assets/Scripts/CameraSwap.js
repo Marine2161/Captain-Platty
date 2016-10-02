@@ -1,4 +1,4 @@
-﻿var currentCam : int = 0;
+﻿var currentCam : int = 1;
 var cams : Camera[];
 var splitScreen : boolean = false;
 

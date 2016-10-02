@@ -1,4 +1,4 @@
 function Update () {
 	//look at current camera
-	transform.LookAt(Camera.main.transform.position);
+	//transform.LookAt(Camera.main.transform.position);
 }

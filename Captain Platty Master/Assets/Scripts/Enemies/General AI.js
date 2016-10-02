@@ -87,8 +87,7 @@ function Patrol (){
 	}
 	if (currentWaypoint >= patrolWaypoint.Length) {
 		currentWaypoint = 0;
-	}
-	if (currentWaypoint == patrolWaypoint.Length){
+		
 		Working ();
 	}
 }
@@ -97,8 +96,8 @@ function Working (){
 	secondsCount += Time.deltaTime;
 	
 	if (Time.deltaTime >= 10){
+		yield WaitForSeconds (5);
 		//working animation
-
 	}
 }
 
