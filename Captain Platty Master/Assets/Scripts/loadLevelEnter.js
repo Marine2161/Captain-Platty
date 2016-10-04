@@ -1,6 +1,6 @@
-﻿var level : int;
+﻿import UnityEngine.SceneManagement;
+var level : int;
 
 function OnTriggerEnter(){
-	Application.LoadLevel("Level"+level);
-
+	SceneManager.LoadScene("Scene 1", LoadSceneMode.Single);
 }
