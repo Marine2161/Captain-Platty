@@ -1,9 +1,9 @@
-﻿function Start () {
+﻿import UnityEngine.SceneManagement;
+
+function Start () {
 
 }
 
 function OnTriggerEnter () {
-
-	Application.LoadLevel ("Western");
-
+	SceneManager.LoadScene("Western", LoadSceneMode.Single);
 }

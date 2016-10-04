@@ -1,9 +1,8 @@
-﻿function Start () {
+﻿import UnityEngine.SceneManagement;
+function Start () {
 
 }
 
 function OnTriggerEnter () {
-
-	Application.LoadLevel ("TheOtherWorld");
-
+	SceneManager.LoadScene("TheOtherWorld", LoadSceneMode.Single);
 }

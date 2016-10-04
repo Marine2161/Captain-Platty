@@ -1,8 +1,9 @@
-﻿var level : int;
+﻿import UnityEngine.SceneManagement;
+var level : int;
 
 function OnTriggerEnter (col : Collider){
 	if (col.gameObject.tag == "Player"){
-		Application.LoadLevel("Level"+level);
+		SceneManager.LoadScene("Level" + level, LoadSceneMode.Single);
 		//Respawn.dead = true;
 		print("Hit");
 	}

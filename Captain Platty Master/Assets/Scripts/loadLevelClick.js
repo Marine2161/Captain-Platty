@@ -1,6 +1,6 @@
-﻿var level : int;
+﻿import UnityEngine.SceneManagement;
+var level : int;
 
 function OnMouseDown(){
-	Application.LoadLevel("Level"+level);
-
+	SceneManager.LoadScene("level" + level, LoadSceneMode.Single);
 }
