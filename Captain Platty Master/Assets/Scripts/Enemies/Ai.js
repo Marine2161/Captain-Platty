@@ -8,7 +8,11 @@ var aggroRange : float = 5;
 //Patrol Var
 var patrolWaypoint : Transform[];
 var currentWaypoint : int = 0;
-var waypointRadious : float = 1; 
+var waypointRadious : float = 1;
+
+var waypointWaiting : boolean = false;
+var waypointPauseLength : float = 3;
+var waypointCurrPause : float = 0;
 
 function Start () {
 
@@ -50,12 +54,14 @@ function Watch (watchTarget : Transform){
 	targetDir = watchTarget.position - transform.position;
 
 	transform.rotation = Quaternion.LookRotation (Vector3.RotateTowards(transform.forward, targetDir, rotateSpeed * Time.deltaTime, 0.0));
+	agent.speed = 0;
 }
 
 function Chase (chaseTarget : Transform){
 
 	agent.SetDestination (chaseTarget.position);
 	agent.updateRotation = true;
+	agent.speed = 5;
 	print ("Chaseing");
 }
 
@@ -72,15 +78,29 @@ function Aggro (aggroTarget : Transform){
 
 function Patrol (){
 
-	Chase (patrolWaypoint[currentWaypoint]);
+
+	if(!waypointWaiting){
+		Chase (patrolWaypoint[currentWaypoint]);
 	
-	if (Vector3.Distance(transform.position, patrolWaypoint[currentWaypoint].position) == waypointRadious - 1){
-		print ("yield");
-		yield WaitForSeconds (1);
+		//if (Vector3.Distance(transform.position, patrolWaypoint[currentWaypoint].position) == waypointRadious - 1){
+		//	print ("yield");
+		//	yield WaitForSeconds (1);
+		//}
+
+		if (Vector3.Distance(transform.position, patrolWaypoint[currentWaypoint].position) < waypointRadious){
+			waypointWaiting = true;
+			waypointCurrPause = 0.0;
+		}
 	}
 
-	else if (Vector3.Distance(transform.position, patrolWaypoint[currentWaypoint].position) < waypointRadious){
-		currentWaypoint ++;
-		print ("Patroling");
+	if(waypointWaiting){
+
+		waypointCurrPause += Time.deltaTime;
+
+		if(waypointCurrPause >= waypointPauseLength){
+			currentWaypoint ++;
+			waypointWaiting = false;
+			print ("Patroling");
+		}
 	}
 }

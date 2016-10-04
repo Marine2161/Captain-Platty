@@ -2,7 +2,7 @@ static var CurrentBlue : GameObject;
 static var CurrentOrange : GameObject;
 
 var Ball : Rigidbody;
-var Ball2 : Rigidbody;
+//var Ball2 : Rigidbody;
 var shot : int = 600;
 
 function Update () {

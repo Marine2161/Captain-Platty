@@ -3,7 +3,7 @@ var power : int = 100;
 
 function Update () {
 	
-	player = GameObject.FindWithTag ("Player");
+	player = GameObject.FindWithTag ("Platty");
 	
 	/*var toTeleport = col.gameObject;
 	toTeleport.transform.position = PortalShooter.CurrentOrange.transform.position
