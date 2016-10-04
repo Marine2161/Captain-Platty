@@ -78,7 +78,7 @@ function Aggro (aggroTarget : Transform){
 
 function Patrol (){
 
-
+	
 	if(!waypointWaiting){
 		Chase (patrolWaypoint[currentWaypoint]);
 	
@@ -103,4 +103,9 @@ function Patrol (){
 			print ("Patroling");
 		}
 	}
+	
+	if (currentWaypoint >= patrolWaypoint.Length) {
+		currentWaypoint = 0;
+	}
+
 }
