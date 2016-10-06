@@ -1,11 +1,5 @@
-﻿public var target: Transform;
-
-public var negativeTarget : Vector3;
+﻿var PlattyCam : Transform;
 
 function Update () {
-
-	negativeTarget = transform.position - target.position;
-
-	transform.LookAt(transform.position + negativeTarget);
-
+	transform.rotation = PlattyCam.rotation;
 }
